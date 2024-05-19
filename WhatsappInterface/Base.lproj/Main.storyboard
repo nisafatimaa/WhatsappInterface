@@ -1,24 +1,229 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WhatsApp-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chats" id="BYZ-38-t0r" customClass="ViewController" customModule="WhatsappInterface" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nk2-aT-iKy">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="228"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hU8-bX-pgj">
+                                        <rect key="frame" x="222" y="104" width="164" height="34.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trL-ZA-x38">
+                                                <rect key="frame" x="0.0" y="0.0" width="54.666666666666664" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="camera" catalog="system">
+                                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="cameraButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="6bW-0z-d6x"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d91-m1-IJx">
+                                                <rect key="frame" x="54.666666666666686" y="0.0" width="54.666666666666657" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="magnifyingglass" catalog="system">
+                                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="searchButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="XH0-cP-HO3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlN-Op-nwH">
+                                                <rect key="frame" x="109.33333333333333" y="0.0" width="54.666666666666671" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="ellipsis" catalog="system">
+                                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="moreButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="DUb-Rt-HKR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTu-5g-GMr">
+                                        <rect key="frame" x="0.0" y="187" width="69.666666666666671" height="33"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="person.3.fill" catalog="system">
+                                            <color key="baseForegroundColor" systemColor="systemGray2Color"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLy-S9-w2x">
+                                        <rect key="frame" x="81.666666666666686" y="187" width="72.333333333333314" height="33"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Chats">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                            <color key="baseForegroundColor" systemColor="systemGray4Color"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4z-34-QRp">
+                                        <rect key="frame" x="301" y="186.33333333333334" width="63" height="33.666666666666657"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Calls">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                            <color key="baseForegroundColor" systemColor="systemGray4Color"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lif-95-AyT">
+                                        <rect key="frame" x="174" y="186" width="92" height="33.666666666666657"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Updates">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                            <color key="baseForegroundColor" systemColor="systemGray4Color"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WhatsApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoQ-dd-rVm">
+                                        <rect key="frame" x="12" y="104" width="483" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15749967100000001" green="0.36132809519999998" blue="0.33333346250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="hU8-bX-pgj" firstAttribute="top" secondItem="Nk2-aT-iKy" secondAttribute="top" constant="104" id="110-Tb-JH3"/>
+                                    <constraint firstAttribute="bottom" secondItem="YTu-5g-GMr" secondAttribute="bottom" constant="8" id="3Gb-vx-CDP"/>
+                                    <constraint firstItem="U4z-34-QRp" firstAttribute="leading" secondItem="Lif-95-AyT" secondAttribute="trailing" constant="35" id="5vd-D8-m4X"/>
+                                    <constraint firstItem="Lif-95-AyT" firstAttribute="top" secondItem="hU8-bX-pgj" secondAttribute="bottom" constant="47.670000000000002" id="7LP-ib-0V6"/>
+                                    <constraint firstItem="YTu-5g-GMr" firstAttribute="leading" secondItem="Nk2-aT-iKy" secondAttribute="leading" id="9r1-RI-WAD"/>
+                                    <constraint firstAttribute="bottom" secondItem="hU8-bX-pgj" secondAttribute="bottom" constant="89.670000000000002" id="GTi-5c-o6W"/>
+                                    <constraint firstAttribute="bottom" secondItem="vLy-S9-w2x" secondAttribute="bottom" constant="8" id="LAH-rk-kAi"/>
+                                    <constraint firstAttribute="trailing" secondItem="U4z-34-QRp" secondAttribute="trailing" constant="29" id="Nbm-wR-B7r"/>
+                                    <constraint firstAttribute="bottom" secondItem="UoQ-dd-rVm" secondAttribute="bottom" constant="87" id="Q4n-zH-67K"/>
+                                    <constraint firstItem="vLy-S9-w2x" firstAttribute="top" secondItem="UoQ-dd-rVm" secondAttribute="bottom" constant="46" id="U2Q-FQ-PaS"/>
+                                    <constraint firstItem="U4z-34-QRp" firstAttribute="top" secondItem="hU8-bX-pgj" secondAttribute="bottom" constant="48" id="UYm-Da-iv0"/>
+                                    <constraint firstItem="UoQ-dd-rVm" firstAttribute="leading" secondItem="Nk2-aT-iKy" secondAttribute="leading" constant="20" id="Vum-Mu-qsO"/>
+                                    <constraint firstItem="UoQ-dd-rVm" firstAttribute="top" secondItem="Nk2-aT-iKy" secondAttribute="top" constant="104" id="WwT-3N-KDA"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lif-95-AyT" secondAttribute="bottom" constant="8.3300000000000001" id="aT8-k9-qGU"/>
+                                    <constraint firstItem="vLy-S9-w2x" firstAttribute="leading" secondItem="YTu-5g-GMr" secondAttribute="trailing" constant="12" id="bTu-zP-MLS"/>
+                                    <constraint firstItem="Lif-95-AyT" firstAttribute="leading" secondItem="vLy-S9-w2x" secondAttribute="trailing" constant="20" id="cQZ-69-oZG"/>
+                                    <constraint firstItem="hU8-bX-pgj" firstAttribute="leading" secondItem="UoQ-dd-rVm" secondAttribute="trailing" constant="60" id="gAE-k0-tej"/>
+                                    <constraint firstAttribute="trailing" secondItem="UoQ-dd-rVm" secondAttribute="trailing" constant="231" id="h54-lC-CqM"/>
+                                    <constraint firstAttribute="trailing" secondItem="hU8-bX-pgj" secondAttribute="trailing" constant="7" id="kNt-j2-J41"/>
+                                    <constraint firstAttribute="bottom" secondItem="U4z-34-QRp" secondAttribute="bottom" constant="8" id="ut9-a1-oeE"/>
+                                    <constraint firstItem="YTu-5g-GMr" firstAttribute="top" secondItem="UoQ-dd-rVm" secondAttribute="bottom" constant="46" id="yqy-aX-pwk"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cnZ-xn-8hO">
+                                <rect key="frame" x="0.0" y="231" width="393" height="577"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChatCell" id="iiB-0K-0HJ">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iiB-0K-0HJ" id="dpR-8D-I24">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZI-p9-FQx">
+                                <rect key="frame" x="293" y="734" width="75" height="64"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" image="text.bubble.fill.rtl" catalog="system" cornerStyle="large">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="22" scale="large" weight="semibold"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.15749967100000001" green="0.36132809519999998" blue="0.33333346250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="messageButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="zv0-Sy-jhn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nk2-aT-iKy" secondAttribute="bottom" constant="590" id="2y0-ah-PaI"/>
+                            <constraint firstItem="cnZ-xn-8hO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6qk-1e-OKH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BZI-p9-FQx" secondAttribute="bottom" constant="20" id="9o1-Q6-5l6"/>
+                            <constraint firstItem="cnZ-xn-8hO" firstAttribute="top" secondItem="Nk2-aT-iKy" secondAttribute="bottom" constant="3" id="LSH-tM-ooX"/>
+                            <constraint firstItem="Nk2-aT-iKy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mtk-xw-qP9"/>
+                            <constraint firstItem="Nk2-aT-iKy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VX8-62-84N"/>
+                            <constraint firstItem="BZI-p9-FQx" firstAttribute="top" secondItem="Nk2-aT-iKy" secondAttribute="bottom" constant="506" id="YU0-w1-fSQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BZI-p9-FQx" secondAttribute="trailing" constant="25" id="bgc-e8-gCP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cnZ-xn-8hO" secondAttribute="bottom" constant="10" id="cxx-pw-0Zj"/>
+                            <constraint firstItem="cnZ-xn-8hO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kjC-HR-5q6"/>
+                            <constraint firstItem="Nk2-aT-iKy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mOy-ul-Bmm"/>
+                            <constraint firstItem="BZI-p9-FQx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="293" id="pDP-O2-MCH"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="WhatsApp" id="JN6-qQ-x2A"/>
+                    <connections>
+                        <outlet property="callsButton" destination="U4z-34-QRp" id="Nxh-xp-xV6"/>
+                        <outlet property="chatsButton" destination="vLy-S9-w2x" id="cqk-RS-KUl"/>
+                        <outlet property="communityButton" destination="YTu-5g-GMr" id="nN4-68-rHf"/>
+                        <outlet property="headerView" destination="Nk2-aT-iKy" id="P1E-nx-wH0"/>
+                        <outlet property="stackView" destination="hU8-bX-pgj" id="Wln-tY-3CN"/>
+                        <outlet property="table" destination="cnZ-xn-8hO" id="DpZ-Zq-Tdc"/>
+                        <outlet property="updatesButton" destination="Lif-95-AyT" id="w91-Lo-TtJ"/>
+                        <outlet property="whatsapp" destination="UoQ-dd-rVm" id="6Zx-WY-Wls"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1043.5114503816794" y="3.5211267605633805"/>
+        </scene>
+        <!--Updates View Controller-->
+        <scene sceneID="j1m-mm-t0B">
+            <objects>
+                <viewController storyboardIdentifier="updates" id="URL-az-w3e" customClass="UpdatesViewController" customModule="WhatsappInterface" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m9N-uH-dnu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Lsj-xJ-H9i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2nD-LR-GtC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598" y="715"/>
+        </scene>
+        <!--Calls View Controller-->
+        <scene sceneID="tAU-lC-9ta">
+            <objects>
+                <viewController storyboardIdentifier="calls" id="zCZ-2w-Zzw" customClass="CallsViewController" customModule="WhatsappInterface" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Spg-7L-Cl1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SZo-FC-efG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUb-jz-BYt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="715"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="128" height="93"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="text.bubble.fill.rtl" catalog="system" width="128" height="110"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

@@ -13,6 +13,10 @@
 		5201E71F2B52D95100DFD553 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5201E71D2B52D95100DFD553 /* Main.storyboard */; };
 		5201E7212B52D95800DFD553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5201E7202B52D95800DFD553 /* Assets.xcassets */; };
 		5201E7242B52D95800DFD553 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5201E7222B52D95800DFD553 /* LaunchScreen.storyboard */; };
+		520482BF2B5C67BB00963BF1 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520482BD2B5C67BB00963BF1 /* ChatCell.swift */; };
+		520482C02B5C67BB00963BF1 /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520482BE2B5C67BB00963BF1 /* ChatCell.xib */; };
+		520482C22B5D4C8F00963BF1 /* UpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520482C12B5D4C8F00963BF1 /* UpdatesViewController.swift */; };
+		520482C42B5D4C9E00963BF1 /* CallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520482C32B5D4C9E00963BF1 /* CallsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5201E7202B52D95800DFD553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5201E7232B52D95800DFD553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5201E7252B52D95800DFD553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		520482BD2B5C67BB00963BF1 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		520482BE2B5C67BB00963BF1 /* ChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
+		520482C12B5D4C8F00963BF1 /* UpdatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesViewController.swift; sourceTree = "<group>"; };
+		520482C32B5D4C9E00963BF1 /* CallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				5201E7172B52D95100DFD553 /* AppDelegate.swift */,
 				5201E7192B52D95100DFD553 /* SceneDelegate.swift */,
 				5201E71B2B52D95100DFD553 /* ViewController.swift */,
+				520482C32B5D4C9E00963BF1 /* CallsViewController.swift */,
+				520482C12B5D4C8F00963BF1 /* UpdatesViewController.swift */,
+				520482BD2B5C67BB00963BF1 /* ChatCell.swift */,
+				520482BE2B5C67BB00963BF1 /* ChatCell.xib */,
 				5201E71D2B52D95100DFD553 /* Main.storyboard */,
 				5201E7202B52D95800DFD553 /* Assets.xcassets */,
 				5201E7222B52D95800DFD553 /* LaunchScreen.storyboard */,
@@ -126,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5201E7242B52D95800DFD553 /* LaunchScreen.storyboard in Resources */,
+				520482C02B5C67BB00963BF1 /* ChatCell.xib in Resources */,
 				5201E7212B52D95800DFD553 /* Assets.xcassets in Resources */,
 				5201E71F2B52D95100DFD553 /* Main.storyboard in Resources */,
 			);
@@ -139,7 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5201E71C2B52D95100DFD553 /* ViewController.swift in Sources */,
+				520482C22B5D4C8F00963BF1 /* UpdatesViewController.swift in Sources */,
+				520482BF2B5C67BB00963BF1 /* ChatCell.swift in Sources */,
 				5201E7182B52D95100DFD553 /* AppDelegate.swift in Sources */,
+				520482C42B5D4C9E00963BF1 /* CallsViewController.swift in Sources */,
 				5201E71A2B52D95100DFD553 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
